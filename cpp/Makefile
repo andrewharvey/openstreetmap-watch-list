@@ -42,7 +42,7 @@ DEPDIR = .deps
 DEPF = $(DEPDIR)/$*
 MAKEDEPEND = $(CXX) -MM $(CXXFLAGS) -o $(DEPF).d $<
 
-all: $(OBJS)
+all: $(OBJS) main dupe_daemon
 
 clean:
 	rm -rf $(DEPDIR) $(OBJS) $(TEST_OBJS) tests main
